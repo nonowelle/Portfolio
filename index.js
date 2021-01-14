@@ -1,6 +1,6 @@
 
 //HOVER EFFECT NAV
-$("a").hover(function () {
+$(".navli").hover(function () {
     $(this).css("color", "#E5E5E5")
 },
     function () {
