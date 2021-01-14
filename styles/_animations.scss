@@ -5,12 +5,13 @@
     justify-self: center;
     align-self: start;
     position:relative;
+  
 }
 
 .triangle-un {
     @include absolute;
     top: 5rem;
-    left: 15rem;
+    left: 10rem;
     transform: rotate(5deg);
     @include triangles;
     border-left: 2rem $border-triangle;
@@ -20,7 +21,7 @@
 
   .triangle-deux {
     @include absolute;
-    left: 5rem;
+    
     top:-3rem;
     transform: rotate(50deg);
     @include triangles;
@@ -31,7 +32,7 @@
 
   .triangle-trois {
     @include absolute;
-    left: 10rem;
+    left: 5rem;
     top:7rem;
     transform: rotate(160deg);
     @include triangles;
@@ -42,7 +43,7 @@
 
   .triangle-quatre {
     @include absolute;
-    left: 2rem;
+    left: -3rem;
     top:10rem;
     transform: rotate(-150deg);
     @include triangles;
@@ -54,7 +55,7 @@
   .triangle-cinq {
     @include absolute;
     top: 6rem;
-    left: 1rem;
+    left: -4rem;
     transform: rotate(90deg);
     @include triangles;
     @include triangles;
@@ -100,16 +101,4 @@
       }
   }
   
-  @keyframes arrows {
-    0% { top:0; }
-    10% { top:12%; }
-    20% { top:0; }
-    30% { top:12%; }
-    40% { top:-12%; }
-    50% { top:12%; }
-    60% { top:0; }
-    70% { top:12%; }
-    80% { top:-12%; }
-    90% { top:12%; }
-    100% { top:0; }
-  }
+  

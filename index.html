@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Convergence&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -57,11 +59,11 @@
             </p>
         </section>
 
-        <section class="projets" id="projets">
-            <h2>Mes projets</h2>
+        <section class="projets " id="projets">
+            <h2 class="show-on-scroll-left">Mes projets</h2>
             <div class="planties">
-                <img class="projets-img" src="imgs/planties.png" alt="captures-ecran-pages-web">
-                <div class="planties-texte">
+                <img class="projets-img show-on-scroll-left" src="imgs/planties.png" alt="captures-ecran-pages-web">
+                <div class="planties-texte show-on-scroll-right">
                     <h3>Planties</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel deserunt harum magni voluptate unde
                         et
@@ -80,28 +82,39 @@
 
             </div>
             <div class="crism">
-                <div class="crism-texte">
+                <div class="crism-texte show-on-scroll-left">
                     <h3>CRISM</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolorum tenetur nemo cupiditate
                         odio
                         possimus ratione explicabo numquam necessitatibus iure ab, facilis hic temporibus obcaecati, non
                         quis quidem commodi minima.</p>
-
+                    <div class="btn">
+                        <a target="_blank" href="https://www.crismquebecatlantic.ca/" class="site">Site Web <i
+                                class="fas fa-long-arrow-alt-right lien"></i></a>
+                    </div>
                 </div>
-
-                <img class="projets-img" src="imgs/CRISM.png" alt="captures-ecran-pages-web">
+                <img class="show-on-scroll-right projets-img show-on-scroll" src="imgs/CRISM.png"
+                    alt="captures-ecran-pages-web">
             </div>
 
             <div class="landing">
-                <div class="landing-texte">
+                <div class="landing-texte show-on-scroll-right">
                     <h3>Page Questions fréquentes</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae quisquam autem deserunt tenetur,
                         molestiae ratione similique, tempora voluptatem sapiente culpa laboriosam officiis quasi?
                         Placeat,
                         reprehenderit ratione consequuntur quaerat iusto harum?</p>
+                    <div class="btn">
+                        <a target="_blank" href="https://faq-accordion-card-challenge-git-main.nonowelle.vercel.app/"
+                            class="site">Site Web <i class="fas fa-long-arrow-alt-right lien"></i></a>
+                    </div>
+                    <div class="btn" type="button">
+                        <a target="_blank" href="https://github.com/nonowelle/faq-accordion-card-challenge"
+                            class="site">Code <i class="fas fa-long-arrow-alt-right lien"></i></a>
+                    </div>
 
                 </div>
-                <img class="projets-img" src="/imgs/accordion.png" alt="">
+                <img class="projets-img show-on-scroll-left" src="/imgs/accordion.png" alt="">
             </div>
         </section>
 
@@ -109,6 +122,7 @@
             <h2 class="comp">Compétences</h2>
 
             <div class="tools-un">
+                <h4>Front-end</h4>
                 <ul>
                     <li>CSS3</li>
                     <li>SCSS</li>
@@ -119,16 +133,24 @@
             </div>
 
             <div class="tools-deux">
-                <li>JS</li>
-                <li>jQuery</li>
-                <li>Node.js</li>
-                <li>Express</li>
+                <h4>Design</h4>
+                <ul>
+                    <li>JS</li>
+                    <li>jQuery</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                </ul>
+
             </div>
             <div class="tools-trois">
-                <li>Sketch/Figma</li>
-                <li>Indesign</li>
-                <li>Analytics & Search Console</li>
-                <li>Tag Manager</li>
+                <h4>SEO</h4>
+                <ul>
+                    <li>Sketch/Figma</li>
+                    <li>Indesign</li>
+                    <li>Analytics & Search Console</li>
+                    <li>Tag Manager</li>
+                </ul>
+
             </div>
 
         </section>

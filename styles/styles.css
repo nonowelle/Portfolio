@@ -53,11 +53,11 @@ svg:hover {
 }
 
 body {
-  font-family: 'Convergence', sans-serif;
+  font-family: 'Poppins', 'Convergence', sans-serif;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 5rem;
   color: #E5e5e5;
   -ms-grid-column: 1;
   grid-column: 1/1;
@@ -78,9 +78,15 @@ h3 {
   color: #404E5C;
 }
 
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #FCAF58;
+}
+
 p {
   color: #E5e5e5;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .projets {
@@ -105,6 +111,40 @@ p {
   width: 90%;
 }
 
+.show-on-scroll-left {
+  -webkit-transition: opacity 1s 0.25s ease-out, -webkit-transform 3s 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: opacity 1s 0.25s ease-out, -webkit-transform 3s 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 3s 0.25s cubic-bezier(0.075, 0.82, 0.165, 1), opacity 1s 0.25s ease-out;
+  transition: transform 3s 0.25s cubic-bezier(0.075, 0.82, 0.165, 1), opacity 1s 0.25s ease-out, -webkit-transform 3s 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+  will-change: transform opacity;
+  -webkit-transform: translateX(-6rem);
+          transform: translateX(-6rem);
+  opacity: 0;
+}
+
+.show-on-scroll-right {
+  -webkit-transition: opacity 1s 0.25s ease-out, -webkit-transform 3s 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: opacity 1s 0.25s ease-out, -webkit-transform 3s 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 3s 0.25s cubic-bezier(0.075, 0.82, 0.165, 1), opacity 1s 0.25s ease-out;
+  transition: transform 3s 0.25s cubic-bezier(0.075, 0.82, 0.165, 1), opacity 1s 0.25s ease-out, -webkit-transform 3s 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+  will-change: width, opacity;
+  -webkit-transform: translateX(6rem);
+          transform: translateX(6rem);
+  opacity: 0;
+}
+
+.is-visible-left {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.is-visible-right {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
 .lien {
   color: #404E5C;
   display: inline-block;
@@ -119,7 +159,6 @@ p {
   height: 3rem;
   margin-top: 2rem;
   margin-right: 1rem;
-  text-align: center;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
@@ -278,7 +317,7 @@ p {
 .triangle-un {
   position: absolute;
   top: 5rem;
-  left: 15rem;
+  left: 10rem;
   -webkit-transform: rotate(5deg);
           transform: rotate(5deg);
   width: 0;
@@ -290,7 +329,6 @@ p {
 
 .triangle-deux {
   position: absolute;
-  left: 5rem;
   top: -3rem;
   -webkit-transform: rotate(50deg);
           transform: rotate(50deg);
@@ -303,7 +341,7 @@ p {
 
 .triangle-trois {
   position: absolute;
-  left: 10rem;
+  left: 5rem;
   top: 7rem;
   -webkit-transform: rotate(160deg);
           transform: rotate(160deg);
@@ -316,7 +354,7 @@ p {
 
 .triangle-quatre {
   position: absolute;
-  left: 2rem;
+  left: -3rem;
   top: 10rem;
   -webkit-transform: rotate(-150deg);
           transform: rotate(-150deg);
@@ -330,7 +368,7 @@ p {
 .triangle-cinq {
   position: absolute;
   top: 6rem;
-  left: 1rem;
+  left: -4rem;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   width: 0;
@@ -379,81 +417,10 @@ p {
   left: -3em;
 }
 
-@-webkit-keyframes arrows {
-  0% {
-    top: 0;
-  }
-  10% {
-    top: 12%;
-  }
-  20% {
-    top: 0;
-  }
-  30% {
-    top: 12%;
-  }
-  40% {
-    top: -12%;
-  }
-  50% {
-    top: 12%;
-  }
-  60% {
-    top: 0;
-  }
-  70% {
-    top: 12%;
-  }
-  80% {
-    top: -12%;
-  }
-  90% {
-    top: 12%;
-  }
-  100% {
-    top: 0;
-  }
-}
-
-@keyframes arrows {
-  0% {
-    top: 0;
-  }
-  10% {
-    top: 12%;
-  }
-  20% {
-    top: 0;
-  }
-  30% {
-    top: 12%;
-  }
-  40% {
-    top: -12%;
-  }
-  50% {
-    top: 12%;
-  }
-  60% {
-    top: 0;
-  }
-  70% {
-    top: 12%;
-  }
-  80% {
-    top: -12%;
-  }
-  90% {
-    top: 12%;
-  }
-  100% {
-    top: 0;
-  }
-}
-
 .skills {
   padding: 2rem 8rem 4rem 8rem;
   background-color: #404E5C;
+  height: 40rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 2fr;
@@ -464,7 +431,7 @@ p {
 
 .skills li {
   list-style: none;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   padding: 0.5rem 0;
   color: #E5E5E5;
 }
@@ -482,9 +449,6 @@ p {
   grid-row: 2/2;
   -ms-grid-column: 1;
   grid-column: 1/1;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 
 .tools-deux {
