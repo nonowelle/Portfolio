@@ -3,7 +3,8 @@
     background-color: $bleu-gris;
     height: 40rem;
     display: grid;
-    grid-template: 1fr 2fr / 1fr 1fr 1fr;
+    justify-items: center;
+    grid-template: 1fr 2fr / 1fr 1fr 1fr 1fr;
     row-gap: 4rem;
 
     li{
@@ -15,9 +16,12 @@
 
 }
 .comp{
+    padding-top: 2rem;
     grid-row: 1/1;
-    grid-column:1/1;
+    grid-column:2/4;
     color: $gris;
+    justify-self: center;
+
 }
 .tools-un {
     grid-row: 2/2;
@@ -33,4 +37,9 @@
 .tools-trois{
     grid-row:2/2;
     grid-column:3/3;
+}
+
+.tools-quatre{
+    grid-row:2/2;
+    grid-column:4/4;
 }
