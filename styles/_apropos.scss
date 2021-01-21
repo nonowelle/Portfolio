@@ -4,6 +4,7 @@
     .para{
         padding-top: 2rem;
         color: $bleu-gris;
+        text-align: center;
     }
 }
 
@@ -15,15 +16,16 @@
     grid-template-rows:1fr;
     grid-gap: 3rem;
     display: grid;
-
 }
+
 
 .etudes{
     grid-row: 1;
     grid-column: 1;
-    min-height: 30rem;
+    min-height: 33rem;
     min-width: 20rem;
     margin-top: 3rem;
+    margin-bottom: 5rem;
     border-radius: 0.5rem;
 }
 
@@ -76,7 +78,7 @@
 
         .title {
             font-size:2rem;
-            margin-bottom:1rem;
+            margin-bottom:0.8rem;
             position: relative;
             color: $bleu-gris;
             &:before {
@@ -93,15 +95,16 @@
               z-index:1000;
             }
           }
-
-.job{
-    grid-row:1/1;
-    grid-column: 2;
-    border: 1px  solid $gris-pale;
-    margin-top: 3rem;
-    min-width: 20rem;
-    border-radius: 0.5rem;
-    
+.job {
+    text-decoration: none;
+    color: $bleu-gris;
+    &:visited{
+        text-decoration: none;
+        color: $bleu-gris;
+    }
+    &:hover{
+        color: $jaune;
+    }
 }
 
 .subtitle{

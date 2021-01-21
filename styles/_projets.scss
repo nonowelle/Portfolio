@@ -49,41 +49,7 @@
    
 }
 
-.btn{
-    display: inline-block;
-    border: none;
-    background-color: $gris;
-    width: 11rem;
-    height: 3rem;
-    margin-top:2rem;
-    margin-right: 1rem;
-    transition: 0.3s ease-in-out;
-    
-    a{
-        display: inline-block;
-        font-size: 1.1rem;
-        padding: 0;
-        margin-bottom: 10px;
-        color: $bleu-gris;
-        text-decoration: none;
-        transition: 0.3s ease-out;
 
-    }
-    
-    &:hover{
-        
-        a {
-            color: $jaune;
-            letter-spacing: 0.05rem;
-            
-            
-    }
-    .lien{
-        color:$jaune;
-        padding: 1rem 1rem;
-    }
-}
-}
 
 //PLANTIES PROJECT
 .planties{
