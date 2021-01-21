@@ -1,7 +1,7 @@
 .apropos{
     padding: 8rem 8rem 2rem 8rem ;
     background-color: $gris;
-    p{
+    .para{
         padding-top: 2rem;
         color: $bleu-gris;
     }
@@ -11,29 +11,97 @@
     text-align: center;
 }
 .parcours{
-    grid-template-columns: 2;
-    grid-template-rows:1;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr;
     grid-gap: 3rem;
-    display: grid;;
+    display: grid;
+
 }
 
 .etudes{
     grid-row: 1;
     grid-column: 1;
-    background-color: $bleu-gris;
     min-height: 30rem;
     min-width: 20rem;
     margin-top: 3rem;
-    border-radius: 0.5rem;;
+    border-radius: 0.5rem;
 }
+
+    .entries{
+        min-height:100%;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top:3rem;
+            left:50%;
+            bottom:4rem;
+            transform:translateX(-50%);
+            width:3px;
+            background-color:$bleu-gris;
+           
+          }
+    }
+   
+    
+    
+
+    .entry {
+        width:calc(50% - 4rem);
+        float:left; 
+        padding:2rem;
+        clear:both;
+        text-align:right;
+            &:not(:first-child) {
+             margin-top:-4rem;
+            }
+        &:nth-child(2n) {
+          text-align:left;
+          float:right;
+          .title {
+            &:before {
+              left:-6.5rem;
+            }
+          }
+        }
+    }
+            
+    .desc-text {
+                color:$gris-pale;
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+            
+        
+
+        .title {
+            font-size:2rem;
+            margin-bottom:1rem;
+            position: relative;
+            color: $bleu-gris;
+            &:before {
+              content: '';
+              position: absolute;
+              width:0.5rem;
+              height:0.5rem;
+              border:0.25rem solid $jaune;
+              background-color: $bleu-gris;
+              border-radius:100%;
+              top:50%;
+              transform:translateY(-50%);
+              right:-6.5rem;
+              z-index:1000;
+            }
+          }
 
 .job{
     grid-row:1/1;
     grid-column: 2;
-    background-color:$bleu-gris;
+    border: 1px  solid $gris-pale;
     margin-top: 3rem;
     min-width: 20rem;
     border-radius: 0.5rem;
+    
 }
 
 .subtitle{
