@@ -1,10 +1,14 @@
 .apropos{
-    padding: 8rem;
+    padding: 8rem 8rem 2rem 8rem ;
     background-color: $gris;
     p{
         padding-top: 2rem;
         color: $bleu-gris;
     }
+}
+
+.titre-apropos{
+    text-align: center;
 }
 .parcours{
     grid-template-columns: 2;

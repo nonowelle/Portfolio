@@ -17,4 +17,13 @@
 
 .nom{
     color: $jaune;
+    padding-top:0;
+    transition: 0.9s ease-in-out;
+    &:hover{
+        letter-spacing: 0.8rem;
+       margin-top: 1rem;
+        padding-left: 1rem;
+        
+    }
+    
 }

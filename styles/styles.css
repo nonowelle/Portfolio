@@ -90,6 +90,11 @@ h5 {
   color: #E5E5E5;
 }
 
+h6 {
+  font-size: 1.1rem;
+  color: #404E5C;
+}
+
 p {
   color: #E5e5e5;
   font-size: 1.2rem;
@@ -298,13 +303,17 @@ p {
 }
 
 .apropos {
-  padding: 8rem;
+  padding: 8rem 8rem 2rem 8rem;
   background-color: #E5E5E5;
 }
 
 .apropos p {
   padding-top: 2rem;
   color: #404E5C;
+}
+
+.titre-apropos {
+  text-align: center;
 }
 
 .parcours {
@@ -377,8 +386,8 @@ p {
   top: -3rem;
   -webkit-transform: rotate(50deg);
           transform: rotate(50deg);
-  width: 0;
-  height: 0;
+  width: 2rem;
+  height: 2rem;
   border-left: 3rem solid transparent;
   border-right: 3rem solid transparent;
   border-bottom: 5rem solid #9EC5AB;
@@ -394,8 +403,8 @@ p {
   top: 7rem;
   -webkit-transform: rotate(160deg);
           transform: rotate(160deg);
-  width: 0;
-  height: 0;
+  width: 2rem;
+  height: 2rem;
   border-left: 1.5rem solid transparent;
   border-right: 1.5rem solid transparent;
   border-bottom: 3rem solid #FCAF58;
@@ -409,8 +418,8 @@ p {
   top: 10rem;
   -webkit-transform: rotate(-150deg);
           transform: rotate(-150deg);
-  width: 0;
-  height: 0;
+  width: 2rem;
+  height: 2rem;
   border-left: 4rem solid transparent;
   border-right: 4rem solid transparent;
   border-bottom: 7rem solid #697B8D;
@@ -426,10 +435,10 @@ p {
   left: -4rem;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  width: 0;
-  height: 0;
-  width: 0;
-  height: 0;
+  width: 2rem;
+  height: 2rem;
+  width: 2rem;
+  height: 2rem;
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
   border-bottom: 2rem solid #D3C0CD;
@@ -647,6 +656,8 @@ p {
     border-left: 2rem solid transparent;
     border-right: 2rem solid transparent;
     border-bottom: 4rem solid #D3C0CD;
+    -webkit-transform: scaleX(3) 10s;
+            transform: scaleX(3) 10s;
   }
   100% {
     left: -4rem;
@@ -673,6 +684,8 @@ p {
     border-left: 2rem solid transparent;
     border-right: 2rem solid transparent;
     border-bottom: 4rem solid #D3C0CD;
+    -webkit-transform: scaleX(3) 10s;
+            transform: scaleX(3) 10s;
   }
   100% {
     left: -4rem;
@@ -803,18 +816,80 @@ p {
 
 .nom {
   color: #FCAF58;
+  padding-top: 0;
+  -webkit-transition: 0.9s ease-in-out;
+  transition: 0.9s ease-in-out;
+}
+
+.nom:hover {
+  letter-spacing: 0.8rem;
+  margin-top: 1rem;
+  padding-left: 1rem;
 }
 
 .contact {
+  background-color: #E5E5E5;
   padding: 6rem 8rem;
+  text-align: center;
 }
 
-.container {
-  display: inline-block;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #FCAF58), color-stop(50%, #FCAF58));
-  background-image: linear-gradient(to right, #FCAF58 50%, #FCAF58 50%);
-  background-position: 0 100%;
-  background-repeat: repeat-x;
-  background-size: 6px 3px;
+.contact p {
+  color: #404E5C;
+  font-size: 0.8rem;
+}
+
+.info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 1fr 2fr;
+      grid-template-columns: 2fr 1fr 1fr 2fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  margin-top: 2rem;
+}
+
+.email {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.email a {
+  text-decoration: none;
+  color: #404E5C;
+}
+
+.email a:hover {
+  font-weight: 600;
+}
+
+.email a:visited {
+  font-weight: 600;
+}
+
+.email a:active {
+  font-weight: 600;
+}
+
+.email a:hover {
+  font-weight: 600;
+}
+
+.phone {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.res i {
+  margin: 2rem 1rem 1rem 1rem;
+  font-size: 1.3rem;
+  color: #404E5C;
+}
+
+.res i:hover {
+  color: #FCAF58;
 }
 /*# sourceMappingURL=styles.css.map */
