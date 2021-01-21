@@ -140,8 +140,8 @@
     transform: rotate(90deg);
     left: 8rem;
     top: 13rem;
-    border-left: 0.5rem $border-triangle;
-    border-right: 0.5rem $border-triangle;
+    border-left: 1rem $border-triangle;
+    border-right: 1rem $border-triangle;
     border-bottom: 1.5rem solid $jaune;
     
   }
@@ -196,7 +196,6 @@
     border-left: 2rem $border-triangle;
     border-right: 2rem $border-triangle;
     border-bottom: 4rem solid $rose;
-    transform: scaleX(3) 10s;
     
   }
 

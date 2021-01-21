@@ -37,8 +37,9 @@ nav li a:visited {
 }
 
 svg {
-  height: 1.7rem;
-  width: 1.7rem;
+  height: 1.6rem;
+  width: 1.6rem;
+  margin-top: 0.2rem;
 }
 
 svg:hover {
@@ -555,8 +556,8 @@ p {
             transform: rotate(90deg);
     left: 8rem;
     top: 13rem;
-    border-left: 0.5rem solid transparent;
-    border-right: 0.5rem solid transparent;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
     border-bottom: 1.5rem solid #FCAF58;
   }
   100% {
@@ -581,8 +582,8 @@ p {
             transform: rotate(90deg);
     left: 8rem;
     top: 13rem;
-    border-left: 0.5rem solid transparent;
-    border-right: 0.5rem solid transparent;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
     border-bottom: 1.5rem solid #FCAF58;
   }
   100% {
@@ -656,8 +657,6 @@ p {
     border-left: 2rem solid transparent;
     border-right: 2rem solid transparent;
     border-bottom: 4rem solid #D3C0CD;
-    -webkit-transform: scaleX(3) 10s;
-            transform: scaleX(3) 10s;
   }
   100% {
     left: -4rem;
@@ -684,8 +683,6 @@ p {
     border-left: 2rem solid transparent;
     border-right: 2rem solid transparent;
     border-bottom: 4rem solid #D3C0CD;
-    -webkit-transform: scaleX(3) 10s;
-            transform: scaleX(3) 10s;
   }
   100% {
     left: -4rem;
@@ -828,13 +825,13 @@ p {
 }
 
 .contact {
-  background-color: #E5E5E5;
+  background-color: #404E5C;
   padding: 6rem 8rem;
   text-align: center;
 }
 
 .contact p {
-  color: #404E5C;
+  color: #E5E5E5;
   font-size: 0.8rem;
 }
 
@@ -848,45 +845,10 @@ p {
   margin-top: 2rem;
 }
 
-.email {
-  -ms-grid-column: 2;
-  grid-column: 2;
-  -ms-grid-row: 1;
-  grid-row: 1;
-}
-
-.email a {
-  text-decoration: none;
-  color: #404E5C;
-}
-
-.email a:hover {
-  font-weight: 600;
-}
-
-.email a:visited {
-  font-weight: 600;
-}
-
-.email a:active {
-  font-weight: 600;
-}
-
-.email a:hover {
-  font-weight: 600;
-}
-
-.phone {
-  -ms-grid-column: 3;
-  grid-column: 3;
-  -ms-grid-row: 1;
-  grid-row: 1;
-}
-
 .res i {
-  margin: 2rem 1rem 1rem 1rem;
-  font-size: 1.3rem;
-  color: #404E5C;
+  margin: 2rem 1.5rem 2rem 1rem;
+  font-size: 1.5rem;
+  color: #E5E5E5;
 }
 
 .res i:hover {

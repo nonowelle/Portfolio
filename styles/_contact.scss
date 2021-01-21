@@ -1,23 +1,14 @@
 .contact {
-    background-color: $gris;
+    background-color: $bleu-gris;
     padding: 6rem 8rem;
     text-align: center;
 
     p{
-        color: $bleu-gris;
+        color: $gris;
         font-size: 0.8rem;
     }
 }
 
-// .container{
-//     display: inline-block;
-//     background-image: linear-gradient(to right, $jaune 50%, $jaune 50%);
-//     background-position: 0 100%;
-//     background-repeat: repeat-x;
-//     background-size: 6px 3px;
-//     margin-bottom: 2rem;
-    
-// }
 
 .info{
     display: grid;
@@ -26,38 +17,12 @@
     margin-top: 2rem;   
 }
 
-.email{
-    grid-column:2;
-    grid-row:1;
-    a{
-        text-decoration: none;
-        color: $bleu-gris;
-
-        &:hover{
-            font-weight: 600;
-        }
-        &:visited{
-            font-weight: 600;
-        }
-        &:active{
-            font-weight: 600;
-        }
-        &:hover{
-            font-weight: 600;
-        }
-    }
-}
-
-.phone{
-    grid-column:3;
-    grid-row:1;
-} 
 
 .res{
     i{
-        margin: 2rem 1rem 1rem 1rem;
-        font-size: 1.3rem;
-        color: $bleu-gris;
+        margin: 2rem 1.5rem 2rem 1rem;
+        font-size: 1.5rem;
+        color: $gris;
 
         &:hover{
             color: $jaune;
