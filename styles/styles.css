@@ -134,6 +134,46 @@ p {
   padding: 1rem 1rem;
 }
 
+.button {
+  display: inline-block;
+  background-color: #FCAF58;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  margin: 2rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  -webkit-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #E5E5E5;
+  color: #FCAF58;
+}
+
+.button:active {
+  background-color: #555;
+}
+
+.button::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f077";
+  font-weight: 800;
+  font-size: 2em;
+  line-height: 3.1rem;
+  color: #404E5C;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 .projets {
   padding: 10rem 8rem;
   background-color: #E5E5E5;
@@ -884,14 +924,6 @@ p {
 .nom {
   color: #FCAF58;
   padding-top: 0;
-  -webkit-transition: 0.9s ease-in-out;
-  transition: 0.9s ease-in-out;
-}
-
-.nom:hover {
-  letter-spacing: 0.8rem;
-  margin-top: 1rem;
-  padding-left: 1rem;
 }
 
 .contact {

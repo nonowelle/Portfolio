@@ -26,6 +26,12 @@ $('.rond-fleche').hover(function () {
     }
 );
 
+//--------------Bouton VERS A PROPOS ---------------------
+$(".rond-fleche").click(function () {
+    $('html, body').animate({ scrollTop: $(".apropos").offset().top }, '2000');
+})
+
+
 // SCROLL EFFECT SECTION PROJETS
 
 let scroll = window.requestAnimationFrame || function (callback) {
@@ -78,4 +84,28 @@ function isElementInViewport(el) {
             rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
     );
 }
+
+//BOUTON BACK TO TOP JQUERY
+
+jQuery(document).ready(function () {
+
+    const btn = $('.button');
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, '8000');
+    });
+
+});
+
+//---------------SCROLLING EFFECT ON TIMELINE-----------------
+
 
