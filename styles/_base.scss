@@ -126,36 +126,21 @@ p{
     
       }
   
-  
+  // ---------------- MEDIA-QUERIES --------------------//
   @media (max-width: 420px){
-h1{
-font-size: 2.2rem;
+    html{
+        font-size: 12px;
+    }
 }
 
-h2{
-font-size: 1.8rem;
+@media (max-width: 767px){
+    html{
+        font-size: 13px;
+    }
 }
 
-h3{
-font-size: 1.5rem;
+@media (max-width: 1023px){
+    html{
+        font-size: 14px;
+    }
 }
-
-h4{
-font-size: 1.3rem;
-}
-
-h5{
-font-size: 1.1rem;
-}
-
-h6{
-    font-size: 1rem;
-
-}
-
-p{
-    font-size: 0.9rem;
-}
-
-  }
-  
