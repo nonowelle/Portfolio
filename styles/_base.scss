@@ -6,8 +6,7 @@
 
 
 body {
-    font-family: 'Poppins', 'Convergence', sans-serif; 
-   
+    font-family: 'Poppins', 'Convergence', sans-serif;    
 }
 
 
@@ -71,17 +70,14 @@ p{
         color: $bleu-gris;
         text-decoration: none;
         transition: 0.3s ease-out;
-
     }
     
     &:hover{
-        
         a {
             color: $jaune;
-            letter-spacing: 0.05rem;
-            
-            
+            letter-spacing: 0.05rem;      
     }
+
     .lien{
         color:$jaune;
         padding: 1rem 1rem;
@@ -120,9 +116,7 @@ p{
         font-size: 2em;
         line-height: 3.1rem;
         color: $bleu-gris;
-      }
-
-      
+      }     
   }
 
   
@@ -133,5 +127,35 @@ p{
       }
   
   
-  
+  @media (max-width: 420px){
+h1{
+font-size: 2.2rem;
+}
+
+h2{
+font-size: 1.8rem;
+}
+
+h3{
+font-size: 1.5rem;
+}
+
+h4{
+font-size: 1.3rem;
+}
+
+h5{
+font-size: 1.1rem;
+}
+
+h6{
+    font-size: 1rem;
+
+}
+
+p{
+    font-size: 0.9rem;
+}
+
+  }
   
