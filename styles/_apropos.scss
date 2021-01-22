@@ -109,3 +109,11 @@
     margin: 2rem 0;
     text-align: center;
 }
+
+// ----------------- MEDIA - QUERIES ----------- //
+
+@media(max-width: 420px){
+    .apropos{
+        padding: 5rem 4rem;
+    }
+}
