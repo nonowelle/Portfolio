@@ -99,6 +99,23 @@ jQuery(document).ready(function () {
 
 });
 
-//---------------SCROLLING EFFECT ON TIMELINE-----------------
+//---------------NAV LINKS ANIMATIONS-----------------
+
+const apropos = $('#liapropos');
+console.log
+
+apropos.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 800 }, '8000');
+
+});
+
+
+const projets = $('#liprojets');
+projets.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 3000 }, '8000');
+
+});
 
 
