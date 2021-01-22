@@ -1330,7 +1330,7 @@ p {
 
 @media (max-width: 767px) {
   .accueil {
-    padding: 5rem 4rem;
+    padding: 3rem 4rem;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr;
