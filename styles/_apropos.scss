@@ -45,9 +45,6 @@
           }
     }
    
-    
-    
-
     .entry {
         width:calc(50% - 4rem);
         float:left; 
@@ -98,6 +95,7 @@
 .job {
     text-decoration: none;
     color: $bleu-gris;
+    transition: color 0.3s;
     &:visited{
         text-decoration: none;
         color: $bleu-gris;

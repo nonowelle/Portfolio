@@ -1,6 +1,5 @@
 nav {
   background-color: #404E5C;
-  color: #FCAF58;
   display: block;
   padding: 0 3rem;
   height: 6rem;
@@ -12,38 +11,32 @@ nav li {
   float: right;
 }
 
-nav li a {
+nav a {
   display: inline-block;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1rem;
   padding: 1.4rem 1.6rem;
   text-decoration: none;
   color: #FCAF58;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  opacity: 0.6;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 
-nav li a:hover {
-  letter-spacing: 0.2rem;
-  padding-top: 1.6rem;
-}
-
-nav li a:active {
-  color: #FCAF58;
-}
-
-nav li a:visited {
-  color: #FCAF58;
+nav a:hover {
+  opacity: 1;
 }
 
 svg {
-  height: 1.6rem;
-  width: 1.6rem;
-  margin-top: 0.2rem;
+  height: 1.4rem;
+  width: 1.4rem;
+  margin-top: 0.08rem;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 svg:hover {
-  fill: #E5E5E5;
+  opacity: 1;
 }
 
 * {
@@ -449,6 +442,8 @@ p {
 .job {
   text-decoration: none;
   color: #404E5C;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .job:visited {
@@ -840,6 +835,10 @@ p {
   left: -3em;
 }
 
+.fleche:hover {
+  color: #E5E5E5;
+}
+
 .skills {
   padding: 2rem 8rem 4rem 8rem;
   background-color: #404E5C;
@@ -951,6 +950,8 @@ p {
   margin: 2rem 1.5rem 2rem 1rem;
   font-size: 1.5rem;
   color: #E5E5E5;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .res i:hover {

@@ -1,12 +1,5 @@
 
-//HOVER EFFECT NAV
-$(".navli").hover(function () {
-    $(this).css("color", "#E5E5E5")
-},
-    function () {
-        $(this).css("color", "#FCAF58")
-    }
-);
+
 
 //HOVER EFFECT BOUTON CENTRAL
 $('.fleche').hover(function () {

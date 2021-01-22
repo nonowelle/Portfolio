@@ -23,6 +23,7 @@
         margin: 2rem 1.5rem 2rem 1rem;
         font-size: 1.5rem;
         color: $gris;
+        transition: color 0.3s;
 
         &:hover{
             color: $jaune;
