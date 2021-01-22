@@ -253,6 +253,14 @@ p {
   html {
     font-size: 13px;
   }
+  .btn {
+    width: 9rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  .btn a {
+    display: inline;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -349,6 +357,7 @@ p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  margin-bottom: 1.5rem;
 }
 
 .planties .planties-texte {
@@ -384,6 +393,7 @@ p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  margin-bottom: 1.5rem;
 }
 
 .crism .crism-texte {
@@ -417,6 +427,7 @@ p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  margin-bottom: 1.5rem;
 }
 
 .landing .landing-texte {
@@ -428,6 +439,81 @@ p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+@media (max-width: 767px) {
+  .projets {
+    padding: 2rem 3rem;
+    row-gap: 2rem;
+  }
+  .projets p {
+    padding-top: 1rem;
+  }
+  .planties {
+    -ms-grid-rows: 3;
+        grid-template-rows: 3;
+    -ms-grid-columns: 1;
+        grid-template-columns: 1;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .planties img {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+  }
+  .planties .planties-texte {
+    -ms-grid-row: 1;
+    grid-row: 1/1;
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+  }
+  .crism {
+    -ms-grid-rows: 3;
+        grid-template-rows: 3;
+    -ms-grid-columns: 1;
+        grid-template-columns: 1;
+  }
+  .crism img {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .crism .crism-texte {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .landing {
+    -ms-grid-rows: 3;
+        grid-template-rows: 3;
+    -ms-grid-columns: 1;
+        grid-template-columns: 1;
+  }
+  .landing img {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+  }
+  .landing .landing-texte {
+    -ms-grid-row: 1;
+    grid-row: 1/1;
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+  }
 }
 
 .apropos {

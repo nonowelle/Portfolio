@@ -127,7 +127,7 @@ p{
       }
   
   // ---------------- MEDIA-QUERIES --------------------//
-  @media (max-width: 420px){
+@media (max-width: 420px){
     html{
         font-size: 12px;
     }
@@ -137,6 +137,18 @@ p{
     html{
         font-size: 13px;
     }
+
+    .btn{
+        width: 9rem;
+        margin-top:0.8rem;
+        margin-bottom: 0.8rem;
+        a{
+            display: inline;
+        }
+    }
+
+
+
 }
 
 @media (max-width: 1023px){
