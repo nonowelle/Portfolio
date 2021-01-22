@@ -97,6 +97,24 @@ svg:hover {
   opacity: 1;
 }
 
+@media (max-width: 420px) {
+  .navli {
+    padding: 1.5rem 0.8rem;
+  }
+  nav {
+    padding: 0 1rem;
+  }
+  nav a {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  nav a {
+    font-size: 1rem;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -175,12 +193,12 @@ p {
   transition: 0.3s ease-out;
 }
 
-.btn:hover a {
+.btn:hover a, .btn:active a {
   color: #FCAF58;
   letter-spacing: 0.05rem;
 }
 
-.btn:hover .lien {
+.btn:hover .lien, .btn:active .lien {
   color: #FCAF58;
   padding: 1rem 1rem;
 }

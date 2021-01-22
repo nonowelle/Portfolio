@@ -3,7 +3,7 @@ nav{
     display: block;
     padding: 0 3rem;
     height: 6rem;
-    width: 100%; 
+    width: 100%;
      a{
          display: inline-block;
          text-align: center;
@@ -94,3 +94,24 @@ svg {
 
 // ----------------MEDIA-QUERIES -----------------------//
 
+
+@media(max-width: 420px){
+    .navli{
+        padding:  1.5rem 0.8rem;
+    }
+    nav{
+        padding : 0 1rem;
+        a{
+            font-size: 0.5rem;
+        }
+    }
+}
+
+@media(max-width: 767px){
+   
+    nav{
+        a{
+            font-size: 1rem;
+        }
+    }
+}
