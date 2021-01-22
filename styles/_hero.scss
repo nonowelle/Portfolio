@@ -22,7 +22,7 @@
 }
 
 // ---------------MEDIA-QUERIES -------------------//@at-root
-@media(max-width: 420px){
+@media(max-width: 767px){
     .accueil{
      padding: 5rem 4rem;
     grid-template-columns: 1fr;
@@ -30,3 +30,4 @@
     min-height: 400px;
     }
 }
+

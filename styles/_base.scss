@@ -127,15 +127,9 @@ p{
       }
   
   // ---------------- MEDIA-QUERIES --------------------//
-@media (max-width: 420px){
-    html{
-        font-size: 12px;
-    }
-}
-
 @media (max-width: 767px){
     html{
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .btn{

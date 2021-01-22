@@ -28,7 +28,7 @@
     border-left: 3rem $border-triangle;
     border-right: 3rem $border-triangle;
     border-bottom: 5rem solid $vert;
-    animation: enlargeTwo 12s infinite;
+    animation: enlargeTwo 10s infinite;
     animation-delay: 1s;
   }
 
@@ -250,73 +250,122 @@
 
   // ---------------------- MEDIA-QUERIES ------------------//
 
-  @media(max-width: 767px){
+  @media(max-width: 767px){ //gros rose
     .un {
-      top: 20rem;
+      top: 18rem;
       left: -3rem;
+      
     }
 
     @keyframes enlarge {
       0% {
-        top: 20rem;
+        top: 19rem;
         left: -3rem;
         
       }
       50% {
-        top: 25rem;
+        top: 17rem;
         left: -5rem; 
-        transform: rotate(-40deg); 
+        transform: rotate(-15deg); 
       }
     
       100%{
-        top: 20rem;
+        top: 19rem;
         left: -3rem; 
       }
     }
 
-    .deux {
-      left:-3rem;
-      transform: rotate(50deg);
-      border-left: 2rem $border-triangle;
-      border-right: 2rem $border-triangle;
-      border-bottom: 4rem solid $vert;
+    .deux { //VERT
+      left:-6rem;
+      top: 18rem;
+      border-left: 1em $border-triangle;
+      border-right: 1em $border-triangle;
+      border-bottom: 1.5em solid $vert;
     }
 
     @keyframes enlargeTwo {
       0% {
-        top: -3rem;
-        left:-3rem;
+        top: 18rem;
+        left:-7rem;
       }
       50% {
-        transform: rotate(90deg);
-        top: 0rem;
+        transform: rotate(60deg);
+      
+        top: 16rem;
         left: -6rem;
       }
     
       100%{
-        top: -3rem;
-        left: -3rem;
+        top: 18rem;
+        left: -7rem;
       }
     }
 
-    .trois {
-      left: -10rem;
-      top:-4rem;
+    .trois { //JAUNE
+      left: -4rem;
+      top:12rem;
+      
+      border-left: 1rem $border-triangle;
+      border-right: 1rem $border-triangle;
+      border-bottom: 2rem solid $jaune;
+      animation: enlargeThree 12s infinite;
     }
 
     @keyframes enlargeThree {
       0% {
-        left: -10rem;
-        top: -4rem;
+        left: -4rem;
+        top: 12rem;
       }
       50% { 
-        left: -15rem;
-        top: -2rem;   
+        transform: rotate(150deg);
+        left: -5rem;
+        top: 14rem;  
+      }    
+      100%{
+        left: -4rem;
+        top: 12rem;
+      }
+    }
+
+    
+
+    .quatre { // GRIS
+      left: -2rem;
+      top:13rem;
+      border-left: 2rem $border-triangle;
+      border-right: 2rem $border-triangle;
+      border-bottom: 5rem solid #697B8D;
+      animation-delay: 0.5s;
+    }
+    @keyframes reduceFour {
+      0% {
+        top: 13rem;
+        border-left: 2rem $border-triangle;
+        border-right: 2rem $border-triangle;
+        border-bottom: 5rem solid #697B8D;
+      }
+      50% {
+        transform: rotate(-100deg);
+        top: 14rem;
+        border-left: 1rem $border-triangle;
+        border-right: 1rem $border-triangle;
+        border-bottom: 3rem solid #697B8D;
+        
       }
     
       100%{
-        left: -10rem;
-        top: -4rem;
+        top: 13rem;
+        border-left: 2rem $border-triangle;
+        border-right: 2rem $border-triangle;
+        border-bottom: 5rem solid #697B8D;
+        
       }
     }
+    .cinq{
+      top: 0rem;
+    left: -1.5rem;
+    visibility: hidden;
+    }
+
+    
   }
