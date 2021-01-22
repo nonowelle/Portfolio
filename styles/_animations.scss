@@ -86,7 +86,7 @@
   50% {
     top: 3rem;
     left: 12rem;
-    transform: rotate(50deg);
+    transform: rotate(90deg);
     border-left: 4rem $border-triangle;
     border-right: 4rem $border-triangle;
     border-bottom: 6rem solid $rose;
@@ -250,44 +250,51 @@
   // ---------------------- MEDIA-QUERIES ------------------//
 
   @media(max-width: 767px){
-    un {
-      @include absolute;
+    .un {
       top: 20rem;
       left: -3rem;
-      transform: rotate(5deg);
-      border-left: 2rem $border-triangle;
-      border-right: 2rem $border-triangle;
-      border-bottom: 4rem solid $rose;
-      animation: enlarge 10s infinite;
-      z-index: -1;
     }
 
     @keyframes enlarge {
       0% {
         top: 20rem;
         left: -3rem;
-        border-left: 2rem $border-triangle;
-        border-right: 2rem $border-triangle;
-        border-bottom: 4rem solid $rose;
         
       }
       50% {
-        top: 22rem;
-        left: -5rem;
-        transform: rotate(50deg);
-        border-left: 4rem $border-triangle;
-        border-right: 4rem $border-triangle;
-        border-bottom: 6rem solid $rose;
-        
+        top: 25rem;
+        left: -5rem; 
+        transform: rotate(-40deg); 
       }
     
       100%{
         top: 20rem;
+        left: -3rem; 
+      }
+    }
+
+    .deux {
+      left:-3rem;
+      transform: rotate(50deg);
+      border-left: 2rem $border-triangle;
+      border-right: 2rem $border-triangle;
+      border-bottom: 4rem solid $vert;
+    }
+
+    @keyframes enlargeTwo {
+      0% {
+        top: -3rem;
+        left:-3rem;
+      }
+      50% {
+        transform: rotate(90deg);
+        top: 0rem;
+        left: -6rem;
+      }
+    
+      100%{
+        top: -3rem;
         left: -3rem;
-        border-left: 2rem $border-triangle;
-        border-right: 2rem $border-triangle;
-        border-bottom: 4rem solid $rose;
-        
       }
     }
   }
