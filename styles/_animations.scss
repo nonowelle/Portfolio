@@ -246,3 +246,48 @@
   }
   
   
+
+  // ---------------------- MEDIA-QUERIES ------------------//
+
+  @media(max-width: 767px){
+    un {
+      @include absolute;
+      top: 20rem;
+      left: -3rem;
+      transform: rotate(5deg);
+      border-left: 2rem $border-triangle;
+      border-right: 2rem $border-triangle;
+      border-bottom: 4rem solid $rose;
+      animation: enlarge 10s infinite;
+      z-index: -1;
+    }
+
+    @keyframes enlarge {
+      0% {
+        top: 20rem;
+        left: -3rem;
+        border-left: 2rem $border-triangle;
+        border-right: 2rem $border-triangle;
+        border-bottom: 4rem solid $rose;
+        
+      }
+      50% {
+        top: 22rem;
+        left: -5rem;
+        transform: rotate(50deg);
+        border-left: 4rem $border-triangle;
+        border-right: 4rem $border-triangle;
+        border-bottom: 6rem solid $rose;
+        
+      }
+    
+      100%{
+        top: 20rem;
+        left: -3rem;
+        border-left: 2rem $border-triangle;
+        border-right: 2rem $border-triangle;
+        border-bottom: 4rem solid $rose;
+        
+      }
+    }
+  }

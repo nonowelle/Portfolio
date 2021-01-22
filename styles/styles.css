@@ -441,9 +441,9 @@ p {
       align-self: center;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .projets {
-    padding: 2rem 3rem;
+    padding: 2rem 4rem;
     row-gap: 2rem;
   }
   .projets p {
@@ -1020,6 +1020,72 @@ p {
   color: #E5E5E5;
 }
 
+@media (max-width: 767px) {
+  un {
+    position: absolute;
+    top: 20rem;
+    left: -3rem;
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+    border-left: 2rem solid transparent;
+    border-right: 2rem solid transparent;
+    border-bottom: 4rem solid #D3C0CD;
+    -webkit-animation: enlarge 10s infinite;
+            animation: enlarge 10s infinite;
+    z-index: -1;
+  }
+  @-webkit-keyframes enlarge {
+    0% {
+      top: 20rem;
+      left: -3rem;
+      border-left: 2rem solid transparent;
+      border-right: 2rem solid transparent;
+      border-bottom: 4rem solid #D3C0CD;
+    }
+    50% {
+      top: 22rem;
+      left: -5rem;
+      -webkit-transform: rotate(50deg);
+              transform: rotate(50deg);
+      border-left: 4rem solid transparent;
+      border-right: 4rem solid transparent;
+      border-bottom: 6rem solid #D3C0CD;
+    }
+    100% {
+      top: 20rem;
+      left: -3rem;
+      border-left: 2rem solid transparent;
+      border-right: 2rem solid transparent;
+      border-bottom: 4rem solid #D3C0CD;
+    }
+  }
+  @keyframes enlarge {
+    0% {
+      top: 20rem;
+      left: -3rem;
+      border-left: 2rem solid transparent;
+      border-right: 2rem solid transparent;
+      border-bottom: 4rem solid #D3C0CD;
+    }
+    50% {
+      top: 22rem;
+      left: -5rem;
+      -webkit-transform: rotate(50deg);
+              transform: rotate(50deg);
+      border-left: 4rem solid transparent;
+      border-right: 4rem solid transparent;
+      border-bottom: 6rem solid #D3C0CD;
+    }
+    100% {
+      top: 20rem;
+      left: -3rem;
+      border-left: 2rem solid transparent;
+      border-right: 2rem solid transparent;
+      border-bottom: 4rem solid #D3C0CD;
+    }
+  }
+}
+
 .skills {
   padding: 2rem 8rem 4rem 8rem;
   background-color: #404E5C;
@@ -1176,16 +1242,6 @@ p {
   font-size: 0.8rem;
 }
 
-.info {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 1fr 1fr 2fr;
-      grid-template-columns: 2fr 1fr 1fr 2fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  margin-top: 2rem;
-}
-
 .res i {
   margin: 2rem 1.5rem 2rem 1rem;
   font-size: 1.5rem;
@@ -1196,5 +1252,11 @@ p {
 
 .res i:hover {
   color: #FCAF58;
+}
+
+@media (max-width: 767px) {
+  .contact {
+    padding: 6rem 4rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

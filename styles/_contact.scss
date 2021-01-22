@@ -10,14 +10,6 @@
 }
 
 
-.info{
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 2fr;
-    grid-template-rows: 1fr;
-    margin-top: 2rem;   
-}
-
-
 .res{
     i{
         margin: 2rem 1.5rem 2rem 1rem;
@@ -28,5 +20,13 @@
         &:hover{
             color: $jaune;
         }
+    }
+}
+
+// ------------------ MEDIA-QUERIES ------------------//
+
+@media(max-width: 767px){
+.contact {
+    padding: 6rem 4rem;
     }
 }
