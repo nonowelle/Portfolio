@@ -99,7 +99,7 @@ svg:hover {
 
 @media (max-width: 420px) {
   .navli {
-    padding: 1.5rem 0.8rem;
+    padding: 1rem 0.8rem;
   }
   nav {
     padding: 0 1rem;
@@ -127,7 +127,7 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #E5e5e5;
   -ms-grid-column: 1;
   grid-column: 1/1;
@@ -138,7 +138,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3.3rem;
+  font-size: 3rem;
   color: #404E5C;
   margin: 2rem 0 0 0;
 }
@@ -1017,6 +1017,17 @@ p {
 .nom {
   color: #FCAF58;
   padding-top: 0;
+}
+
+@media (max-width: 420px) {
+  .accueil {
+    padding: 5rem 4rem;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    min-height: 400px;
+  }
 }
 
 .contact {

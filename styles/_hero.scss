@@ -18,6 +18,14 @@
 .nom{
     color: $jaune;
     padding-top:0;
-   
-    
+}
+
+// ---------------MEDIA-QUERIES -------------------//@at-root
+@media(max-width: 420px){
+    .accueil{
+     padding: 5rem 4rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    min-height: 400px;
+    }
 }
