@@ -130,6 +130,8 @@ svg:hover {
     float: none;
     max-height: 1rem;
     overflow: hidden;
+    -webkit-transition: max-height 0.4s linear;
+    transition: max-height 0.4s linear;
   }
   .navbar .menu {
     margin: 3.5rem  2rem;

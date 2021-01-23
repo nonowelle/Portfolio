@@ -133,6 +133,8 @@ svg {
         float: none;
         max-height: 1rem;
         overflow: hidden;
+        transition: max-height 0.4s linear;
+        
        
     .menu{
         
