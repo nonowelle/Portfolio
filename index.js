@@ -118,4 +118,11 @@ projets.on('click', function (e) {
 
 });
 
+// -------------------- NAVBAR EXPAND RESPONSIVE ------ //
 
+$(document).ready(function () {
+    $('#menu-icon').on('click', function () {
+        $('.navbar').toggleClass('expand');
+        return false;
+    });
+});
