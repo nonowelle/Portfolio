@@ -252,119 +252,35 @@
 
   @media(max-width: 767px){ //gros rose
     .un {
-      top: 18rem;
-      left: -3rem;
+      
+      display: none;
       
     }
 
-    @keyframes enlarge {
-      0% {
-        top: 19rem;
-        left: -3rem;
-        
-      }
-      50% {
-        top: 17rem;
-        left: -5rem; 
-        transform: rotate(-15deg); 
-      }
     
-      100%{
-        top: 19rem;
-        left: -3rem; 
-      }
-    }
 
     .deux { //VERT
-      left:-6rem;
-      top: 18rem;
-      border-left: 1em $border-triangle;
-      border-right: 1em $border-triangle;
-      border-bottom: 1.5em solid $vert;
+      
+      display: none;
     }
 
-    @keyframes enlargeTwo {
-      0% {
-        top: 18rem;
-        left:-7rem;
-      }
-      50% {
-        transform: rotate(60deg);
-      
-        top: 16rem;
-        left: -6rem;
-      }
     
-      100%{
-        top: 18rem;
-        left: -7rem;
-      }
-    }
 
     .trois { //JAUNE
-      left: -4rem;
-      top:12rem;
-      
-      border-left: 1rem $border-triangle;
-      border-right: 1rem $border-triangle;
-      border-bottom: 2rem solid $jaune;
-      animation: enlargeThree 12s infinite;
-    }
-
-    @keyframes enlargeThree {
-      0% {
-        left: -4rem;
-        top: 12rem;
-      }
-      50% { 
-        transform: rotate(150deg);
-        left: -5rem;
-        top: 14rem;  
-      }    
-      100%{
-        left: -4rem;
-        top: 12rem;
-      }
+      display: none;
+  
     }
 
     
 
     .quatre { // GRIS
-      left: -2rem;
-      top:13rem;
-      border-left: 2rem $border-triangle;
-      border-right: 2rem $border-triangle;
-      border-bottom: 5rem solid #697B8D;
-      animation-delay: 0.5s;
-    }
-    @keyframes reduceFour {
-      0% {
-        top: 13rem;
-        border-left: 2rem $border-triangle;
-        border-right: 2rem $border-triangle;
-        border-bottom: 5rem solid #697B8D;
-      }
-      50% {
-        transform: rotate(-100deg);
-        top: 14rem;
-        border-left: 1rem $border-triangle;
-        border-right: 1rem $border-triangle;
-        border-bottom: 3rem solid #697B8D;
-        
-      }
+      display: none;
     
-      100%{
-        top: 13rem;
-        border-left: 2rem $border-triangle;
-        border-right: 2rem $border-triangle;
-        border-bottom: 5rem solid #697B8D;
-        
-      }
     }
+    
+    
     .cinq{
-      top: 0rem;
-    left: -1.5rem;
-    visibility: hidden;
+    display: none;
     }
 
     
