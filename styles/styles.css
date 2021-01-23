@@ -121,6 +121,7 @@ svg:hover {
   }
   .navbar a {
     font-size: 0.5rem;
+    opacity: 1;
   }
 }
 
@@ -150,6 +151,7 @@ svg:hover {
     display: block;
     font-size: 1rem;
     display: block;
+    opacity: 1;
   }
   .navli {
     float: none;
