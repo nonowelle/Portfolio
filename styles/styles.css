@@ -168,6 +168,7 @@ svg:hover {
     text-decoration: none;
     cursor: pointer;
     opacity: 1;
+    font-size: 1.3rem;
   }
   #menu-icon:hover {
     opacity: 0.85;

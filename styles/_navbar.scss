@@ -138,8 +138,7 @@ svg {
         
        
     .menu{
-        
-         margin:3.5rem  2rem ;
+        margin:3.5rem  2rem ;
 		padding: 0;
         list-style-type: none;
         .navli {
@@ -179,6 +178,7 @@ svg {
         text-decoration: none;
         cursor: pointer;
         opacity: 1;
+        font-size: 1.3rem;
     
         &:hover {
             opacity: 0.85;
