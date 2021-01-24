@@ -333,12 +333,10 @@ p {
     font-size: 12px;
   }
   .btn {
-    width: 9rem;
+    width: 40%;
     margin-top: 0.8rem;
     margin-bottom: 0.8rem;
-  }
-  .btn a {
-    display: inline;
+    margin-right: 0.5rem;
   }
 }
 
