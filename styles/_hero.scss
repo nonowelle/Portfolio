@@ -1,10 +1,11 @@
 .accueil{
     display: grid;
     grid-template-columns: 60% 40%;
-    grid-template-rows: 70% 20% auto;
-    min-height: 600px;
+    grid-template-rows: 1fr;
+    // min-height: 800px;
+    min-height: 100%;
     width: 100%;
-    padding: 10rem 8rem;
+    padding: 10rem;
     background-color: $bleu-gris;
 }
 
@@ -24,7 +25,7 @@
 // ---------------MEDIA-QUERIES -------------------//@at-root
 @media(max-width: 767px){
     .accueil{
-     padding: 3rem 4rem;
+     padding: 4rem 4rem 8rem 4rem;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     min-height: 400px;
