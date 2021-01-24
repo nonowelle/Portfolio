@@ -99,24 +99,33 @@ jQuery(document).ready(function () {
 
 });
 
-//---------------NAV LINKS ANIMATIONS-----------------
+//---------------NAV LINKS SCROLL ANIMATION-----------------
 
-const apropos = $('#liapropos');
-console.log
+$(document).ready(function () {
+    // Add smooth scrolling to all links
+    $(".nav").on('click', function (event) {
 
-apropos.on('click', function (e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: 800 }, '8000');
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
 
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function () {
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        } // End if
+    });
 });
 
-
-const projets = $('#liprojets');
-projets.on('click', function (e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: 3000 }, '8000');
-
-});
 
 // -------------------- NAVBAR EXPAND RESPONSIVE ------ //
 
