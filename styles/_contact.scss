@@ -5,14 +5,15 @@
 
     p{
         color: $gris;
-        font-size: 0.8rem;
+        font-size: 1rem;
+        margin-top: 2rem;
     }
 }
 
 
 .res{
     i{
-        margin: 2rem 1.5rem 2rem 1rem;
+        margin: 2rem .5rem;
         font-size: 1.5rem;
         color: $gris;
         transition: color 0.3s;
@@ -22,6 +23,16 @@
         }
     }
 }
+
+.title-contact{
+    color: $gris;
+}
+
+#copyright{
+    font-size: 0.8rem;
+}
+   
+
 
 // ------------------ MEDIA-QUERIES ------------------//
 

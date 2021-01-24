@@ -87,6 +87,7 @@
     padding: 4rem;
     list-style-type: none;
     line-height: 5rem;
+    background-color: #404E5C;
   }
   .navbar .menu .navli {
     float: none;
@@ -1108,16 +1109,8 @@ p {
   font-size: 1.2rem;
   padding: 0.5rem 0;
   color: #E5E5E5;
-  display: inline-block;
+  display: block;
   margin: 0.2rem;
-}
-
-.skills .logos {
-  color: #E5E5E5;
-  font-size: 2.5rem;
-  border: 1px solid #E5E5E5;
-  padding: 1rem;
-  border-radius: 0.5rem;
 }
 
 .comp {
@@ -1254,11 +1247,12 @@ p {
 
 .contact p {
   color: #E5E5E5;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  margin-top: 2rem;
 }
 
 .res i {
-  margin: 2rem 1.5rem 2rem 1rem;
+  margin: 2rem .5rem;
   font-size: 1.5rem;
   color: #E5E5E5;
   -webkit-transition: color 0.3s;
@@ -1267,6 +1261,14 @@ p {
 
 .res i:hover {
   color: #FCAF58;
+}
+
+.title-contact {
+  color: #E5E5E5;
+}
+
+#copyright {
+  font-size: 0.8rem;
 }
 
 @media (max-width: 767px) {
