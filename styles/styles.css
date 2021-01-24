@@ -718,6 +718,12 @@ p {
   text-align: center;
 }
 
+.cv {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
 @media (max-width: 420px) {
   .apropos {
     padding: 5rem 4rem;
