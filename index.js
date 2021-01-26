@@ -130,8 +130,13 @@ $(document).ready(function () {
 // -------------------- NAVBAR EXPAND RESPONSIVE ------ //
 
 $(document).ready(function () {
-    $('#menu-icon').on('click', function () {
+    $('.menu-icon').on('click', function () {
         $('.navbar').toggleClass('expand');
+        $('.menu-icon').toggleClass("span-animate");
         return false;
     });
 });
+
+
+// --------NAVBAR MENU ICON ANIMATION---------//
+
