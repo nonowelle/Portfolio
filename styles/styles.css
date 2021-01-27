@@ -300,13 +300,16 @@ p {
     margin-bottom: 0.8rem;
     margin-right: 0.2rem;
   }
+  .btn a {
+    font-size: 1rem;
+  }
   .btn:hover a, .btn:active a {
     color: #FCAF58;
     letter-spacing: 0;
   }
   .btn:hover .lien, .btn:active .lien {
     color: #FCAF58;
-    padding: 0;
+    padding: 0.5rem;
   }
 }
 
