@@ -2,6 +2,7 @@
 
  // ----------- NEW NAVBAR-------------------
  .header {
+
 	width: 100%;
     background-color: $bleu-gris;
  }
@@ -28,7 +29,7 @@
     display: none;
     cursor: pointer;
     flex-grow: 1;
-    // margin-left: 25px;
+    
 
     span{
         display: block;
@@ -51,6 +52,7 @@
     opacity: 0.7;
     &:hover{
         opacity: 1; 
+
     }
 }
 
@@ -68,7 +70,6 @@
     visibility: hidden;
 }
 
-   
 // ----------------MEDIA-QUERIES -----------------------//
 
 
