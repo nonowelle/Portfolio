@@ -1148,7 +1148,7 @@ p {
 }
 
 .container {
-  max-width: 100%;
+  max-width: 70%;
   margin: 1rem auto;
 }
 
@@ -1205,12 +1205,26 @@ p {
   .skills {
     padding: 5rem 4rem;
   }
+  .container {
+    max-width: 100%;
+  }
   .grid {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     gap: 1rem;
+  }
+  .grid .logo {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+  }
+  .grid .logo:hover {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+    -webkit-filter: none;
+            filter: none;
   }
   #mongo {
     height: 2rem;
