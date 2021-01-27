@@ -128,7 +128,7 @@
     }
     .navbar{
         padding : 0 1rem;
-        display: none;
+        
         
         a{
             font-size: 0.5rem;
@@ -162,6 +162,7 @@
         line-height: 4rem;
         background-color: $bleu-gris;
         
+        
         .navli {
             float: none;
             padding: 0.5rem;
@@ -188,7 +189,7 @@
 
 // ------- MENU EXPANDING ANIMATION --------//
     .expand {
-        max-height: 60vh;
+        max-height: 100vh;
         border-bottom: 2px solid $jaune;
         position:fixed;
         z-index: 1500;
