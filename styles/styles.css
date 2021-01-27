@@ -298,7 +298,15 @@ p {
     width: 40%;
     margin-top: 0.8rem;
     margin-bottom: 0.8rem;
-    margin-right: 0.5rem;
+    margin-right: 0.2rem;
+  }
+  .btn:hover a, .btn:active a {
+    color: #FCAF58;
+    letter-spacing: 0;
+  }
+  .btn:hover .lien, .btn:active .lien {
+    color: #FCAF58;
+    padding: 0;
   }
 }
 
@@ -499,6 +507,9 @@ p {
   .show-on-scroll-left {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+  .site {
+    padding: 1rem 0;
   }
 }
 
