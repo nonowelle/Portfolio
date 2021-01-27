@@ -91,8 +91,8 @@
     float: none;
     max-height: 0;
     overflow: hidden;
-    -webkit-transition: max-height 0.8s linear;
-    transition: max-height 0.8s linear;
+    -webkit-transition: max-height 0.4s linear;
+    transition: max-height 0.4s linear;
     position: fixed;
     z-index: 1500;
   }
@@ -122,7 +122,7 @@
     opacity: 1;
   }
   .expand {
-    max-height: 50vh;
+    max-height: 60vh;
     border-bottom: 2px solid #FCAF58;
     position: fixed;
     z-index: 1500;

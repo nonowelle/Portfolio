@@ -150,7 +150,7 @@
         float: none;
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.8s linear;
+        transition: max-height 0.4s linear;
         position: fixed;
         z-index: 1500;
         
@@ -188,7 +188,7 @@
 
 // ------- MENU EXPANDING ANIMATION --------//
     .expand {
-        max-height: 50vh;
+        max-height: 60vh;
         border-bottom: 2px solid $jaune;
         position:fixed;
         z-index: 1500;
