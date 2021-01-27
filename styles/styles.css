@@ -91,8 +91,8 @@
     float: none;
     max-height: 0;
     overflow: hidden;
-    -webkit-transition: all 0.4s linear;
-    transition: all 0.4s linear;
+    -webkit-transition: max-height 0.8s linear;
+    transition: max-height 0.8s linear;
     position: fixed;
     z-index: 1500;
   }
@@ -127,8 +127,6 @@
     position: fixed;
     z-index: 1500;
     display: block;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
   }
   .email {
     color: #E5E5E5;
