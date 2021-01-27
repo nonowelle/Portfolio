@@ -121,8 +121,13 @@ $(document).ready(function () {
 
                 // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
+
             });
-        } // End if
+
+        }
+        $('.navbar').toggleClass('expand')
+        $('.menu-icon').toggleClass("span-animate");
+
     });
 });
 
@@ -137,6 +142,7 @@ $(document).ready(function () {
     });
 });
 
-
-// --------NAVBAR MENU ICON ANIMATION---------//
+$('.navli').on('click', function () {
+    $('.men;u-icon').toggleClass("span-animate");
+})
 

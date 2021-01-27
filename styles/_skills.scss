@@ -1,7 +1,7 @@
 .skills{
-    padding: 2rem 8rem 4rem 8rem;
+    padding: 10rem 8rem;
     background-color: $bleu-gris;
-    
+
 
     // li{
     //     list-style: none;
@@ -18,7 +18,7 @@
     grid-column:2/4;
     color: $jaune;
     text-align: center;
-   
+
 }
 .container{
    max-width: 70%;
@@ -48,6 +48,7 @@
             max-width: 100%;
             transform: translate(-50%, -50%);
         }
+
 
         img{
             height: 3rem;

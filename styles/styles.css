@@ -73,7 +73,6 @@
   }
   .navbar {
     padding: 0 1rem;
-    display: none;
   }
   .navbar a {
     font-size: 0.5rem;
@@ -91,8 +90,8 @@
     float: none;
     max-height: 0;
     overflow: hidden;
-    -webkit-transition: max-height 0.8s linear;
-    transition: max-height 0.8s linear;
+    -webkit-transition: max-height 0.4s linear;
+    transition: max-height 0.4s linear;
     position: fixed;
     z-index: 1500;
   }
@@ -122,7 +121,7 @@
     opacity: 1;
   }
   .expand {
-    max-height: 50vh;
+    max-height: 100vh;
     border-bottom: 2px solid #FCAF58;
     position: fixed;
     z-index: 1500;
@@ -189,7 +188,6 @@ h1 {
 h2 {
   font-size: 2.5rem;
   color: #404E5C;
-  margin: 2rem 0 0 0;
 }
 
 h3 {
@@ -482,9 +480,27 @@ p {
       align-self: center;
 }
 
+@media (max-width: 767px) {
+  .show-on-scroll-right {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .is-visible-left {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .is-visible-right {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .show-on-scroll-left {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 @media (max-width: 1023px) {
   .projets {
-    padding: 2rem 4rem;
     row-gap: 2rem;
   }
   .projets p {
@@ -580,6 +596,7 @@ p {
   grid-gap: 3rem;
   display: -ms-grid;
   display: grid;
+  position: relative;
 }
 
 .etudes {
@@ -596,7 +613,6 @@ p {
 
 .entries {
   min-height: 100%;
-  position: relative;
 }
 
 .entries::before {
@@ -632,15 +648,10 @@ p {
   left: -6.5rem;
 }
 
-.desc-text {
-  color: #697B8D;
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-}
-
 .title {
-  font-size: 2rem;
-  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
   position: relative;
   color: #404E5C;
 }
@@ -660,25 +671,31 @@ p {
   z-index: 1000;
 }
 
-.job {
+.job-title {
+  color: #404E5C;
+  font-size: 1.1rem;
+}
+
+.job-desc {
+  color: #697B8D;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.job-link {
   text-decoration: none;
   color: #404E5C;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
 
-.job:visited {
+.job-link:visited {
   text-decoration: none;
   color: #404E5C;
 }
 
-.job:hover {
+.job-link:hover {
   color: #FCAF58;
-}
-
-.subtitle {
-  margin: 2rem 0;
-  text-align: center;
 }
 
 .cv {
@@ -689,7 +706,7 @@ p {
 
 @media (max-width: 767px) {
   .apropos {
-    padding: 5rem 2rem;
+    padding: 5rem 4rem;
   }
   .title {
     font-size: 1rem;
@@ -697,19 +714,7 @@ p {
     position: relative;
     color: #404E5C;
   }
-  .desc {
-    padding-bottom: 2rem;
-  }
-  .job {
-    font-size: 0.8rem;
-  }
-  .desc-text {
-    font-size: 0.8rem;
-  }
-  .entry {
-    margin: 0;
-  }
-  .hide {
+  .parcours {
     display: none;
   }
 }
@@ -1124,7 +1129,7 @@ p {
 }
 
 .skills {
-  padding: 2rem 8rem 4rem 8rem;
+  padding: 10rem 8rem;
   background-color: #404E5C;
 }
 
@@ -1172,7 +1177,15 @@ p {
   max-width: 100%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  color: #E5E5E5;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
+
+
 
 .grid .logo img {
   height: 3rem;
