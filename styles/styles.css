@@ -188,7 +188,6 @@ h1 {
 h2 {
   font-size: 2.5rem;
   color: #404E5C;
-  margin: 2rem 0 0 0;
 }
 
 h3 {
@@ -481,6 +480,25 @@ p {
       align-self: center;
 }
 
+@media (max-width: 767px) {
+  .show-on-scroll-right {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .is-visible-left {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .is-visible-right {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .show-on-scroll-left {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 @media (max-width: 1023px) {
   .projets {
     padding: 2rem 4rem;
@@ -556,25 +574,6 @@ p {
   }
 }
 
-@media (max-width: 767px) {
-  .show-on-scroll-right {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  .is-visible-left {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  .is-visible-right {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  .show-on-scroll-left {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
 .apropos {
   padding: 8rem 8rem 2rem 8rem;
   background-color: #E5E5E5;
@@ -598,6 +597,7 @@ p {
   grid-gap: 3rem;
   display: -ms-grid;
   display: grid;
+  position: relative;
 }
 
 .etudes {
@@ -614,7 +614,6 @@ p {
 
 .entries {
   min-height: 100%;
-  position: relative;
 }
 
 .entries::before {
@@ -1162,6 +1161,9 @@ p {
   color: #E5E5E5;
   -ms-grid-column-align: center;
       justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .tools-un {
