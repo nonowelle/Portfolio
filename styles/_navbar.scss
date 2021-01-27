@@ -5,7 +5,6 @@
 	position: relative;
 	width: 100%;
     background-color: $bleu-gris;
-    height: 100%;
  }
 
 .navbar{
@@ -24,13 +23,14 @@
 
 .menu{
     float:right;
+    margin: 0;
 }
 
 .menu-icon{
     display: none;
     cursor: pointer;
     flex-grow: 1;
-    margin-left: 25px;
+    // margin-left: 25px;
 
     span{
         display: block;
@@ -142,6 +142,7 @@
     height: 100%;
     line-height: 0;
     padding: 0;
+    
 
     }
     .navbar{
@@ -151,13 +152,14 @@
         transition: max-height 0.4s linear;
         
     .menu{
-        height: 100vh;
+        height: 100%;
         width:100%;
-        margin: 0rem 2rem;
+        margin: 2rem 0;
 		padding: 0 4rem;
         list-style-type: none;
         line-height: 4rem;
         background-color: $bleu-gris;
+       
         
         .navli {
             float: none;
@@ -183,11 +185,14 @@
     } 
 }
 
-
+// ------- MENU EXPANDING ANIMATION --------//
     .expand {
         max-height: 100vh;
-
+        border-bottom: 2px solid $jaune;
+        position:fixed;
+        z-index: 1500;
     }
+// ------------------------------------ //
 
     .email{
         color: $gris;
@@ -196,8 +201,10 @@
 
     .menu-icon {
         display: block;
-        float: right;
-        margin: 2rem; 
+        position: fixed;
+        right: 3rem;
+        top: 1.5rem;
+        z-index: 1501;
         &:hover {
             opacity: 0.85;
             text-decoration: none;
