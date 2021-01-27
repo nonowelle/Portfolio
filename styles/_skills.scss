@@ -1,11 +1,11 @@
 .skills{
-    padding: 2rem 8rem 4rem 8rem;
+    padding: 10rem 8rem;
     background-color: $bleu-gris;
     height: 40rem;
     display: grid;
-    justify-items: center;
-    grid-template: 1fr 2fr / 1fr 1fr 1fr 1fr;
-    row-gap: 4rem;
+    justify-items: start;
+    grid-template: 1fr 2fr / 2fr 1fr 1fr 1fr 1fr 2fr;
+    grid-gap: 2rem;
 
     li{
         list-style: none;
@@ -28,24 +28,26 @@
 }
 .tools-un {
     grid-row: 2/2;
-    grid-column:1/1;
+    grid-column:2/2;
     
     
 }
 
 .tools-deux{
     grid-row:2/2;
-    grid-column:2/2;
+    grid-column:3/3;
 }
 
 .tools-trois{
     grid-row:2/2;
-    grid-column:3/3;
+    grid-column:4/4;
+  
 }
 
 .tools-quatre{
     grid-row:2/2;
-    grid-column:4/4;
+    grid-column:5/5;
+    
 }
 
 // -------------------- MEDIA-QUERIES ---------------- //

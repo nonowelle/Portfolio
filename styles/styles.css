@@ -501,7 +501,6 @@ p {
 
 @media (max-width: 1023px) {
   .projets {
-    padding: 2rem 4rem;
     row-gap: 2rem;
   }
   .projets p {
@@ -1130,16 +1129,16 @@ p {
 }
 
 .skills {
-  padding: 2rem 8rem 4rem 8rem;
+  padding: 10rem 8rem;
   background-color: #404E5C;
   height: 40rem;
   display: -ms-grid;
   display: grid;
-  justify-items: center;
+  justify-items: start;
   -ms-grid-rows: 1fr 2fr;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template: 1fr 2fr / 1fr 1fr 1fr 1fr;
-  row-gap: 4rem;
+  -ms-grid-columns: 2fr 1fr 1fr 1fr 1fr 2fr;
+      grid-template: 1fr 2fr / 2fr 1fr 1fr 1fr 1fr 2fr;
+  grid-gap: 2rem;
 }
 
 .skills li {
@@ -1169,29 +1168,29 @@ p {
 .tools-un {
   -ms-grid-row: 2;
   grid-row: 2/2;
-  -ms-grid-column: 1;
-  grid-column: 1/1;
-}
-
-.tools-deux {
-  -ms-grid-row: 2;
-  grid-row: 2/2;
   -ms-grid-column: 2;
   grid-column: 2/2;
 }
 
-.tools-trois {
+.tools-deux {
   -ms-grid-row: 2;
   grid-row: 2/2;
   -ms-grid-column: 3;
   grid-column: 3/3;
 }
 
-.tools-quatre {
+.tools-trois {
   -ms-grid-row: 2;
   grid-row: 2/2;
   -ms-grid-column: 4;
   grid-column: 4/4;
+}
+
+.tools-quatre {
+  -ms-grid-row: 2;
+  grid-row: 2/2;
+  -ms-grid-column: 5;
+  grid-column: 5/5;
 }
 
 @media (max-width: 767px) {
