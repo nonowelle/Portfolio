@@ -556,6 +556,25 @@ p {
   }
 }
 
+@media (max-width: 767px) {
+  .show-on-scroll-right {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .is-visible-left {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .is-visible-right {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .show-on-scroll-left {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 .apropos {
   padding: 8rem 8rem 2rem 8rem;
   background-color: #E5E5E5;

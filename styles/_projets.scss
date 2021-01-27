@@ -181,4 +181,24 @@
             grid-column:1/1;
         }
     };
+ 
+}
+
+
+@media(max-width: 767px){
+
+.show-on-scroll-right{   
+    transform: translateX(0);
+    }
+
+.is-visible-left{
+    transform: translateX(0)   
+    }
+.is-visible-right{
+    transform: translateX(0)   
+    }
+
+.show-on-scroll-left{   
+    transform: translateX(0); 
+    }
 }
