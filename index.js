@@ -124,7 +124,8 @@ $(document).ready(function () {
 
             });
 
-        } $('.navbar').toggleClass('expand')
+        }
+        $('.navbar').toggleClass('expand')
         $('.menu-icon').toggleClass("span-animate");
 
     });
