@@ -64,35 +64,44 @@
           }
         }
     }
+
+    .title {
+        font-size:1.3rem;
+        font-weight: 600;
+        margin-bottom:0.5rem;
+        position: relative;
+        color: $bleu-gris;
+        &:before {
+          content: '';
+          position: absolute;
+          width:0.5rem;
+          height:0.5rem;
+          border:0.25rem solid $jaune;
+          background-color: $bleu-gris;
+          border-radius:100%;
+          top:50%;
+          transform:translateY(-50%);
+          right:-6.5rem;
+          z-index:1000;
+        }
+      }
+
+    .job-title{
+        color: $bleu-gris;
+        font-size: 1.1rem;
+        
+    }
             
-    .desc-text {
+    .job-desc {
                 color:$gris-pale;
-                font-size: 1rem;
+                font-size: 0.9rem;
                 margin-bottom: 1.5rem;
             }
             
         
 
-        .title {
-            font-size:2rem;
-            margin-bottom:0.8rem;
-            position: relative;
-            color: $bleu-gris;
-            &:before {
-              content: '';
-              position: absolute;
-              width:0.5rem;
-              height:0.5rem;
-              border:0.25rem solid $jaune;
-              background-color: $bleu-gris;
-              border-radius:100%;
-              top:50%;
-              transform:translateY(-50%);
-              right:-6.5rem;
-              z-index:1000;
-            }
-          }
-.job {
+        
+.job-link {
     text-decoration: none;
     color: $bleu-gris;
     transition: color 0.3s;
@@ -105,10 +114,7 @@
     }
 }
 
-.subtitle{
-    margin: 2rem 0;
-    text-align: center;
-}
+
 
 .cv {
     margin: 0 auto;
@@ -121,7 +127,7 @@
 
 @media(max-width: 767px){
     .apropos{
-        padding: 5rem 2rem;
+        padding: 5rem 4rem;
     }
 
     .title {
@@ -131,22 +137,8 @@
         color: $bleu-gris;
 }
 
-.desc{
-    padding-bottom: 2rem;
-}
-.job {
-    font-size: 0.8rem;
-    
-}
-.desc-text{
-    font-size: 0.8rem;
-}
-
-.entry{
-    margin: 0;
-}
-
-.hide{
+.parcours{
     display: none;
 }
+
 }

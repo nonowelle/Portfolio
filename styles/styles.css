@@ -650,15 +650,10 @@ p {
   left: -6.5rem;
 }
 
-.desc-text {
-  color: #697B8D;
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-}
-
 .title {
-  font-size: 2rem;
-  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
   position: relative;
   color: #404E5C;
 }
@@ -678,25 +673,31 @@ p {
   z-index: 1000;
 }
 
-.job {
+.job-title {
+  color: #404E5C;
+  font-size: 1.1rem;
+}
+
+.job-desc {
+  color: #697B8D;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.job-link {
   text-decoration: none;
   color: #404E5C;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
 
-.job:visited {
+.job-link:visited {
   text-decoration: none;
   color: #404E5C;
 }
 
-.job:hover {
+.job-link:hover {
   color: #FCAF58;
-}
-
-.subtitle {
-  margin: 2rem 0;
-  text-align: center;
 }
 
 .cv {
@@ -707,7 +708,7 @@ p {
 
 @media (max-width: 767px) {
   .apropos {
-    padding: 5rem 2rem;
+    padding: 5rem 4rem;
   }
   .title {
     font-size: 1rem;
@@ -715,19 +716,7 @@ p {
     position: relative;
     color: #404E5C;
   }
-  .desc {
-    padding-bottom: 2rem;
-  }
-  .job {
-    font-size: 0.8rem;
-  }
-  .desc-text {
-    font-size: 0.8rem;
-  }
-  .entry {
-    margin: 0;
-  }
-  .hide {
+  .parcours {
     display: none;
   }
 }
