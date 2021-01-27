@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 1fr;
-    // min-height: 800px;
     min-height: 100%;
     width: 100%;
     padding: 10rem;
@@ -25,7 +24,7 @@
 // ---------------MEDIA-QUERIES -------------------//@at-root
 @media(max-width: 767px){
     .accueil{
-     padding: 4rem 4rem 8rem 4rem;
+    padding: 4rem 4rem 8rem 4rem;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     min-height: 400px;

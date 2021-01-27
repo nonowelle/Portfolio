@@ -2,7 +2,7 @@
 
  // ----------- NEW NAVBAR-------------------
  .header {
-	position: relative;
+	// position: relative;
 	width: 100%;
     background-color: $bleu-gris;
  }
@@ -23,7 +23,7 @@
 
 .menu{
     float:right;
-    margin: 0;
+    margin: 0;  
 }
 
 .menu-icon{
@@ -128,6 +128,7 @@
     }
     .navbar{
         padding : 0 1rem;
+        display: none;
         
         a{
             font-size: 0.5rem;
@@ -139,7 +140,7 @@
 @media(max-width: 767px){
     .header {
     max-width: 100%; 
-    height: 100%;
+    // height: 100%;
     line-height: 0;
     padding: 0;
     
@@ -149,17 +150,17 @@
         float: none;
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.4s linear;
+        transition: all 0.4s linear;
+        position: fixed;
+        z-index: 1500;
         
     .menu{
-        height: 100%;
         width:100%;
         margin: 2rem 0;
 		padding: 0 4rem;
         list-style-type: none;
         line-height: 4rem;
         background-color: $bleu-gris;
-       
         
         .navli {
             float: none;
@@ -187,10 +188,12 @@
 
 // ------- MENU EXPANDING ANIMATION --------//
     .expand {
-        max-height: 100vh;
+        max-height: 50vh;
         border-bottom: 2px solid $jaune;
         position:fixed;
         z-index: 1500;
+        display: block;
+        transition: all 0.4s ease; 
     }
 // ------------------------------------ //
 
