@@ -28,16 +28,17 @@
 .grid{
   
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 4fr));
     gap: 1rem;  
 
     .logo{
         background:$gris;
         padding: 4rem;
         position: relative;
-        border-radius: 0.2rem;
+        border-radius: 0.3rem;
         transition: all 0.2s ease-in;
-        filter: grayscale(100%);
+        filter: grayscale(80%);
+       
 
         i{
             font-size: 4rem;
