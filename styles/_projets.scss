@@ -21,14 +21,14 @@
 .show-on-scroll-left{
     transition: transform 3s 0.25s cubic-bezier(0.075, 0.82, 0.165, 1), opacity 1s .25s ease-out;
     will-change:transform opacity;
-    transform: translateX(-6rem);
+    transform: translateX(-1rem);
     opacity: 0;
 }
 
 .show-on-scroll-right{
     transition: transform 3s 0.25s cubic-bezier(0.075, 0.82, 0.165, 1), opacity 1s .25s ease-out;
     will-change: width, opacity;
-    transform: translateX(6rem);
+    transform: translateX(1rem);
     opacity: 0;
 }
 

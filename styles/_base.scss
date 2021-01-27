@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 
-
+html{
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
 body {
     font-family: 'Poppins', 'Convergence', sans-serif;    
+    width: 100%;
 }
 
 
@@ -84,7 +89,7 @@ p{
     }
 }
 }
-//SCROLL TO TOP BUTTON
+// ------------SCROLL TO TOP BUTTON----------- //
 .button {
     display: inline-block;
     background-color: $jaune;
@@ -92,10 +97,10 @@ p{
     height: 3rem;
     text-align: center;
     border-radius: 50%;
-    margin: 2rem;
+    margin: 0;
     position: fixed;
-    bottom: 1rem;
-    right: 2rem;
+    bottom: 2rem;
+    right: 3rem;
     transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
     opacity:0;
    
