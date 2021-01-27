@@ -481,6 +481,9 @@ p {
 }
 
 @media (max-width: 767px) {
+  .projets {
+    padding: 5rem 4rem;
+  }
   .show-on-scroll-right {
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -1145,7 +1148,7 @@ p {
 }
 
 .container {
-  max-width: 70%;
+  max-width: 100%;
   margin: 1rem auto;
 }
 
@@ -1196,6 +1199,22 @@ p {
   opacity: 1;
   -webkit-filter: none;
           filter: none;
+}
+
+@media (max-width: 767px) {
+  .skills {
+    padding: 5rem 4rem;
+  }
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  #mongo {
+    height: 2rem;
+  }
 }
 
 .accueil {

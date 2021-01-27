@@ -1,16 +1,6 @@
 .skills{
     padding: 10rem 8rem;
     background-color: $bleu-gris;
-
-
-    // li{
-    //     list-style: none;
-    //     font-size: 1.2rem;
-    //     padding: 0.5rem 0;
-    //     color: $gris;
-    //     display: block;
-    //     margin: 0.2rem;
-    // }
 }
 .comp{
     margin: 2rem 0;
@@ -21,12 +11,11 @@
 
 }
 .container{
-   max-width: 70%;
+   max-width: 100%;
     margin: 1rem auto;
 }
 
 .grid{
-  
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 4fr));
     gap: 1rem;  
@@ -70,4 +59,23 @@
 
     }
    
+}
+
+// ----------------- MEDIA - QUERIES ----------- //
+
+@media(max-width: 767px){
+    .skills{
+        padding: 5rem 4rem;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem; 
+
+}
+
+#mongo{
+    height: 2rem;
+}
 }

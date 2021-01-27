@@ -121,6 +121,9 @@
 
 // ------------ MEDIA-QUERIES ------------ //
 @media(max-width: 767px){
+    .projets{
+        padding: 5rem 4rem;
+    }
 
     .show-on-scroll-right{   
         transform: translateX(0);
