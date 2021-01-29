@@ -418,6 +418,7 @@ p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  margin-bottom: 1rem;
 }
 
 .crism {
@@ -450,6 +451,7 @@ p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  margin-bottom: 1rem;
 }
 
 .landing {
@@ -489,6 +491,14 @@ p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  margin-bottom: 1rem;
+}
+
+.tech {
+  color: #697B8D;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  margin-left: 0.5rem;
 }
 
 @media (max-width: 767px) {
@@ -513,6 +523,9 @@ p {
   }
   .site {
     padding: 1rem 0;
+  }
+  .tech {
+    margin-left: 0;
   }
 }
 
