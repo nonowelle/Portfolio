@@ -612,6 +612,8 @@ p {
   padding-top: 2rem;
   color: #404E5C;
   text-align: center;
+  max-width: 55rem;
+  margin: 0 auto;
 }
 
 .titre-apropos {
@@ -729,9 +731,13 @@ p {
 }
 
 .cv {
-  margin: 0 auto;
+  margin: 2rem auto;
   text-align: center;
   width: 100%;
+}
+
+.cv a {
+  font-size: 1.5rem;
 }
 
 @media (max-width: 767px) {
