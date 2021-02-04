@@ -10,6 +10,15 @@
     }
 }
 
+.contact-link{
+    color: $gris;
+
+    &:hover{
+        color: $jaune;
+        cursor: pointer;
+    }
+    }
+
 
 .res{
     i{

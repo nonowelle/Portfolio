@@ -1314,6 +1314,15 @@ p {
   margin-top: 2rem;
 }
 
+.contact-link {
+  color: #E5E5E5;
+}
+
+.contact-link:hover {
+  color: #FCAF58;
+  cursor: pointer;
+}
+
 .res i {
   margin: 2rem .5rem;
   font-size: 1.5rem;
