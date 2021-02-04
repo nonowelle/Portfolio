@@ -1,7 +1,7 @@
 
 
 
-//HOVER EFFECT BOUTON CENTRAL
+//----------------HOVER EFFECT BOUTON CENTRAL------------------//
 $('.fleche').hover(function () {
     $(this).css("color", "#E5E5E5")
 },
@@ -19,13 +19,13 @@ $('.rond-fleche').hover(function () {
     }
 );
 
-//--------------Bouton VERS A PROPOS ---------------------
+//--------------BOUTON VERS À PROPOS ---------------------//
 $(".rond-fleche").click(function () {
     $('html, body').animate({ scrollTop: $(".apropos").offset().top }, '2000');
 })
 
 
-// SCROLL EFFECT SECTION PROJETS
+//-------------- SCROLL EFFECT SECTION PROJETS-----------------//
 
 let scroll = window.requestAnimationFrame || function (callback) {
     window.setTimeout(callback, 1000 / 60)
@@ -61,7 +61,7 @@ function loopR() {
 loopR();
 
 function isElementInViewport(el) {
-    // special bonus for those using jQuery
+    // because of jQuery
     if (typeof jQuery === "function" && el instanceof jQuery) {
         el = el[0];
     }
@@ -78,7 +78,7 @@ function isElementInViewport(el) {
     );
 }
 
-//BOUTON BACK TO TOP JQUERY
+//-------------BOUTON BACK TO TOP JQUERY-----------------//
 
 jQuery(document).ready(function () {
 
@@ -99,27 +99,25 @@ jQuery(document).ready(function () {
 
 });
 
-//---------------NAV LINKS SCROLL ANIMATION-----------------
+//---------------NAV LINKS SCROLL ANIMATION-----------------//
 
 $(document).ready(function () {
-    // Add smooth scrolling to all links
     $(".nav").on('click', function (event) {
 
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
-            // Prevent default anchor click behavior
+            // Prevent default click behaviour
             event.preventDefault();
 
             // Store hash
             var hash = this.hash;
 
             // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
             }, 800, function () {
 
-                // Add hash (#) to URL when done scrolling (default click behavior)
+                // Add hash (#) to URL
                 window.location.hash = hash;
 
             });
